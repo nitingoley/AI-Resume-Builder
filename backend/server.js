@@ -97,6 +97,10 @@ app.post("/resume/create", upload.single("headshotImage"), async (req, res) => {
     }
 });
 
+app.get("/", (req , res)=>{
+    res.send("Developer")
+})
+
 // Start the server
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
