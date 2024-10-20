@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Loading from "./Loading";
 import axios from "axios";
+import "./Home.css"
 
 const Home = ({ setResult }) => {
 	const [fullName, setFullName] = useState("");
