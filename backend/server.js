@@ -53,7 +53,7 @@ const generateTextWithGoogleAI = async (question) => {
 };
 
 // Route to handle resume creation
-app.post("/resume/create", upload.single("headshotImage"), async (req, res) => {
+app.post("/", upload.single("headshotImage"), async (req, res) => {
     const { fullName, currentPosition, currentLength, currentTechnologies, workHistory } = req.body;
     const workArray = JSON.parse(workHistory);
 
