@@ -43,7 +43,7 @@ const Home = ({ setResult }) => {
 		formData.append("certifications", certifications); // New field
 		formData.append("workHistory", JSON.stringify(companyInfo));
 		axios
-			.post("https://ai-resume-builder-lm6u.onrender.com/resume/create", formData, {})
+			.post("https://ai-resume-builder-ten-rho.vercel.app/resume/create", formData, {})
 			.then((res) => {
 				if (res.data.message) {
 					setResult(res.data.data);
